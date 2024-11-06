@@ -1,0 +1,192 @@
+/* client/src/App.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* NavBar Styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a,
+nav ul li button {
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+form h2 {
+  margin-top: 0;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.password-container label {
+  margin-left: 10px;
+}
+
+/* Chat Container Styles */
+.chat-container {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.message {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message img {
+  max-width: 100px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+}
+
+.message-form input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-form button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-form .gif-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  width: 60px; /* Set fixed width for GIF button */
+}
+
+.message-form button[type="submit"] {
+  width: 60px; /* Set fixed width for Send button */
+}
+
+/* GIF Search Container Styles */
+.gif-search-container {
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gif-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.gif-results img {
+  max-width: 100px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.gif-results img:hover {
+  border-color: #333;
+}
